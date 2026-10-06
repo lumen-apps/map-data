@@ -11,3 +11,6 @@ Dieses Repository enthält Geodaten zu Bauwerken und Sehenswürdigkeiten im GeoJ
 
 ## Hinweis zu Koordinaten
 In GeoJSON werden Koordinaten immer als `[Längengrad (Longitude), Breitengrad (Latitude)]` angegeben (`[lon, lat]`).
+
+## Deinen Beitrag
+Gerne darfst du deinen Katholischen Ort hinzufügen, einfach Datei erstellen und PR erstellen. Gerne darfst du auch vorhandene Weiterentwickeln.
