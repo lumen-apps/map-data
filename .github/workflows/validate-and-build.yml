@@ -37,7 +37,7 @@ jobs:
       # 6. Änderungen an index.json automatisch committen (nur bei Push auf main/master)
       - name: Commit updated index.json
         if: github.event_name == 'push'
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: auto-generate index.json [skip ci]"
           file_pattern: "data/index.json"
