@@ -1,0 +1,43 @@
+name: Validate & Build GeoJSON Index
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Repository auschecken
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. Node.js Umgebung einrichten
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 3. AJV-CLI installieren (für JSON-Schema Validierung)
+      - name: Install Validation Tools
+        run: npm install -g ajv-cli ajv-formats
+
+      # 4. Alle einzelnen JSON-Dateien gegen das Schema prüfen
+      - name: Validate Building JSONs against Schema
+        run: |
+          npx ajv validate -s schema/building.schema.json -d "data/buildings/*.json" --strict=false
+
+      # 5. index.json über das Skript neu generieren
+      - name: Build index.json
+        run: node scripts/build-index.js
+
+      # 6. Änderungen an index.json automatisch committen (nur bei Push auf main/master)
+      - name: Commit updated index.json
+        if: github.event_name == 'push'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-generate index.json [skip ci]"
+          file_pattern: "data/index.json"
