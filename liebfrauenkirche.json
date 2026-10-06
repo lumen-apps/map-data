@@ -1,0 +1,15 @@
+{
+  "type": "Feature",
+  "id": "SzcPwdoRZ1vEbPHIu7x2",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      8.545092283056569,
+      47.379535461642675
+    ]
+  },
+  "properties": {
+    "name": "Liebfrauenkirche",
+    "description": "Katholische Kirche in Zürich. Nach dem Vorbild römischer Basiliken erbaute Kirche des späten 19. Jh. mit Glockenturm und Innenraum mit Säulen."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "Feature",
+  "id": "3blnQm7Un6VjSEo4hryk",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      12.45492321686002,
+      41.90217630889452
+    ]
+  },
+  "properties": {
+    "name": "Petersdom",
+    "description": "Basilika im Vatikanstaat. Kirche aus der Spätrenaissance von Architekten wie Michelangelo mit Platz für bis zu 20.000 Gläubige."
+  }
+}

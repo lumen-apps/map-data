@@ -1,0 +1,15 @@
+{
+  "type": "Feature",
+  "id": "HXSYRxph9yhcwDv0zlOz",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      12.498795824404862,
+      41.897433909568555
+    ]
+  },
+  "properties": {
+    "name": "S. Maria Maggiore",
+    "description": "Basilika in Rom. Berühmte Papstbasilika aus dem 5. Jh., bekannt für römische Mosaike und vergoldete Decke."
+  }
+}

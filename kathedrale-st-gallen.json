@@ -1,0 +1,15 @@
+{
+  "type": "Feature",
+  "id": "mYJODMHXbfkH61CLEdPH",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      9.376435381320684,
+      47.423106577633135
+    ]
+  },
+  "properties": {
+    "name": "Kathedrale St. Gallen",
+    "description": "Kathedrale des Bistums St. Gallen in St. Gallen. Prächtige katholische Barockkirche mit 68 m hohen Doppeltürmen aus dem 18. Jh. im UNESCO-Erbe Stiftsbezirk."
+  }
+}

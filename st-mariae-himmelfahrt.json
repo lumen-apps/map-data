@@ -1,0 +1,15 @@
+{
+  "type": "Feature",
+  "id": "1QPSSz2hfD62t6Kuj06h",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      9.535281190730148,
+      46.84768159141296
+    ]
+  },
+  "properties": {
+    "name": "St. Mariä Himmelfahrt",
+    "description": "Kathedrale des Bistums Chur in Chur."
+  }
+}
